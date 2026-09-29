@@ -1,12 +1,168 @@
-<html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>sudin rajthala </h1>
-        <h2> About me </h2>
-        <p> My name is sudin rajthala. I am a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I enjoy learning new technologies. In my free time, I like to work on personal projects and contribute to open-source communities.</p>
-        <h3>Email: sudin.rajthala@example.com</h3>
-        <h4>Phone: (977) 9761805852</h4>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body id="top">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Sudin Rajthala logo" width="100">
+            </div>
+
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search-bar">
+                <form action="search.php" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about_container">
+                <h1>About Me</h1>
+                <img src="images/profile.jpeg" alt="Sudin Rajthala profile picture" width="100">
+                <h2>Sudin Rajthala</h2>
+                <p>
+                    My name is Sudin Rajthala. I am a software developer with a passion for creating innovative solutions.
+                    I have experience in various programming languages and frameworks, and I enjoy learning new technologies.
+                    In my free time, I like to work on personal projects and contribute to open-source communities.
+                </p>
+                <p>Email: <a href="mailto:sudin.rajthala@gmail.com">sudin.rajthala@gmail.com</a></p>
+                <p>Phone: <a href="tel:+9779761805852">(977) 9761805852</a></p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects_container">
+                <h1>My Projects</h1>
+                <article>
+                    <h2>Project 1: Personal Portfolio Website</h2>
+                    <p>This project involved creating a personal portfolio website to showcase my skills and projects. I used HTML, CSS, and JavaScript to build a responsive and visually appealing website.</p>
+                </article>
+                <article>
+                    <h2>Project 2: School Management System</h2>
+                    <p>This project involved developing a comprehensive school management system to streamline administrative tasks and improve communication between students, teachers, and parents. I utilized Python and Django for the backend and implemented a user-friendly interface.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="education_container">
+                <h1>Education</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.N.</th>
+                            <th>Level</th>
+                            <th>Completion Date</th>
+                            <th>Institution</th>
+                            <th>Grade</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>School</td>
+                            <td>2023</td>
+                            <td>Modern Boarding School</td>
+                            <td>Grade 12</td>
+                            <td>3.2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>College</td>
+                            <td>2025</td>
+                            <td>Chanakya College of Management</td>
+                            <td>+2</td>
+                            <td>3.2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bachelor's Degree</td>
+                            <td>Ongoing</td>
+                            <td>Model Institute of Technology</td>
+                            <td>Bachelor's in Computer Science</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills_container">
+                <h1>Skills</h1>
+                <dl>
+                    <dt>Databases</dt>
+                    <dd>MySQL</dd>
+                    <dt>Programming Languages</dt>
+                    <dd>Python, Java, C, C++</dd>
+                    <dt>Tools</dt>
+                    <dd>VS Code, MS Word, MS Excel, PowerPoint</dd>
+                    <dt>Frameworks</dt>
+                    <dd>Django, Flask</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact_container">
+                <h1>Contact Me</h1>
+                <p>If you would like to get in touch with me, please fill out the contact form below or reach out to me via email or phone.</p>
+
+                <p>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/fb.png" alt="Facebook" width="40"></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/insta.jpg" alt="Instagram" width="40"></a>
+                    <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp.jpg" alt="WhatsApp" width="40"></a>
+                </p>
+
+                <form action="submit_form.php" method="post">
+                    <p>
+                        <label for="Username">Name:</label>
+                        <input type="text" id="Username" name="Username" required>
+                    </p>
+
+                    <p>
+                        <label for="Email">Email:</label>
+                        <input type="email" id="Email" name="Email" required>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sudin Rajthala. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
