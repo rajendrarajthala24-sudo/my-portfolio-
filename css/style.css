@@ -217,25 +217,33 @@ footer {
         width: 60%;
     }
 
+    /* Keeps table layout on mobile instead of hiding/converting it */
+    .education_container {
+        overflow-x: auto; /* Allows horizontal scrolling if the table is wider than the screen */
+    }
 
-    table,
-    tr,
-    td {
-        display: block;
-        border: 0;
+    table {
+        display: table;
+        width: 100%;
     }
 
     thead {
-        display: none;
+        display: table-header-group;
     }
 
     tr {
-        border: 1px solid gray;
-        margin-bottom: 10px;
+        display: table-row;
+        border: none;
+        margin-bottom: 0;
+    }
+
+    td {
+        display: table-cell;
+        padding: 6px 8px;
+        font-size: 0.85rem;
     }
 
     td::before {
-        content: attr(data-label) ": ";
-        font-weight: bold;
+        content: none; /* Removes the data-label prefix */
     }
 }
