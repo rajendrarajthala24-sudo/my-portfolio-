@@ -139,23 +139,39 @@ th {
 
 dl {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 1rem 0 0 0;
 }
 
-dl div {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    padding: 10px 15px;
+dt,
+dd {
+    margin: 0;
 }
 
 dt {
-    font-weight: bold;
+    background-color: #f8f9fa;
     color: #036c8c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 15px 4px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left: 4px solid #036c8c;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
 }
 
 dd {
-    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 0 15px 12px 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: 4px solid #036c8c;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    margin-bottom: 0;
 }
 
 textarea,
@@ -217,9 +233,8 @@ footer {
         width: 60%;
     }
 
-    /* Keeps table layout on mobile instead of hiding/converting it */
     .education_container {
-        overflow-x: auto; /* Allows horizontal scrolling if the table is wider than the screen */
+        overflow-x: auto;
     }
 
     table {
@@ -244,6 +259,6 @@ footer {
     }
 
     td::before {
-        content: none; /* Removes the data-label prefix */
+        content: none;
     }
 }
